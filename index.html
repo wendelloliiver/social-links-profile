@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="https://fonts.google.com/specimen/Inter" rel="stylesheet">
+
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+      * {
+        color: hsl(0, 0%, 100%);
+
+        padding: 0%;
+        margin: 0%;
+
+        text-align: center;
+      }
+
+      body {
+        background-color: hsl(0, 0%, 8%);
+
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        /* Ainda irei adicionar as fontes! */
+        font-family: 'Inter', sans-serif;
+      }
+
+      main {
+        background-color: hsl(0, 0%, 12%);
+
+        width: 320px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+
+      .name {
+        font-weight: 700;
+        margin: 5px 0;
+      }
+
+      .locale {
+        color: hsl(75, 94%, 57%);
+        font-weight: 600;
+        font-size: 0.6em;
+        margin: 5px 0;
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 0.8em;
+        margin: 10px 0 20px;
+      }
+
+      .links {
+        
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .links li {
+        margin: 10px;
+      } 
+
+      .links a {
+        background-color: hsl(0, 0%, 20%);
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .links a:hover {
+        background-color: #555;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="/assets/images/avatar-jessica.jpeg" alt="Foto de perfil">
+      <div class="name">Jessica Randall</div>
+      <div class="locale">London, United Kingdom</div>
+      <div class="description">"Front-end developer and avid reader."</div>
+
+      <ul class="links">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Frontend Mentor</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Wendell Oliveira</a>.
+    </div>
+  </body>
+</html>
